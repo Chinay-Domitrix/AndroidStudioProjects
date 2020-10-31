@@ -1,0 +1,8 @@
+<resources>
+	<string name="app_name">September 23 Quiz Practice</string>
+	<string name="button1">Button 1</string>
+	<string name="red_button_text">Red Button Text</string>
+	<string name="green_button_text">Green Button Text</string>
+	<string name="blue_button_text">Blue Button Text</string>
+	<string name="button2">Button 2</string>
+</resources>

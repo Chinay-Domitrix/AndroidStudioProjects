@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Switches And SeekBars Practice 2"

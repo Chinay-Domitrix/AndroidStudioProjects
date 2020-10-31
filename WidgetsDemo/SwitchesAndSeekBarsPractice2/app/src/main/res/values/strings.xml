@@ -1,0 +1,7 @@
+<resources>
+	<string name="app_name">Switches And SeekBars Practice 2</string>
+	<string name="switch_1">Switch 1</string>
+	<string name="switch_2">Switch 2</string>
+	<string name="switch_3">Switch 3</string>
+	<string name="color">Color</string>
+</resources>

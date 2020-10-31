@@ -1,0 +1,41 @@
+<resources>
+	<string name="app_name">Chirag Baviskar - Calculator</string>
+	<string name="_1">1</string>
+	<string name="_2">2</string>
+	<string name="_3">3</string>
+	<string name="u002b">+</string>
+	<string name="_4">4</string>
+	<string name="_5">5</string>
+	<string name="_6">6</string>
+	<string name="u2212">−</string>
+	<string name="_7">7</string>
+	<string name="_8">8</string>
+	<string name="_9">9</string>
+	<string name="u00d7">×</string>
+	<string name="_0">0</string>
+	<string name="u003d">=</string>
+	<string name="u00f7">÷</string>
+	<string name="u002e">.</string>
+	<string name="clear">C</string>
+	<string name="_2nd">2ⁿᵈ</string>
+	<string name="sine">sin</string>
+	<string name="cosine">cos</string>
+	<string name="tangent">tan</string>
+	<string name="inverseSine">sin⁻¹</string>
+	<string name="inverseCosine">cos⁻¹</string>
+	<string name="inverseTangent">tan⁻¹</string>
+	<string name="cosecant">csc</string>
+	<string name="secant">sec</string>
+	<string name="cotangent">cot</string>
+	<string name="inverseCosecant">csc⁻¹</string>
+	<string name="inverseSecant">sec⁻¹</string>
+	<string name="inverseCotangent">cot⁻¹</string>
+	<string name="u0028">(</string>
+	<string name="u0029">)</string>
+	<string name="error">Error</string>
+	<string name="opError">Operand Error</string>
+	<string name="parError">Parenthetical Error</string>
+	<string name="u221a">√</string>
+	<string name="decimalError">Decimal Error</string>
+	<string name="u005e">^</string>
+</resources>
