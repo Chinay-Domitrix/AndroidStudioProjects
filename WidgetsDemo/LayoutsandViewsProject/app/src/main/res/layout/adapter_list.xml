@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:clickable="true"
+	android:weightSum="3">
+
+	<ImageView
+		android:id="@+id/adapter_imageView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_weight="1"
+		android:contentDescription="@string/mango"
+		android:maxWidth="50dp"
+		tools:srcCompat="@tools:sample/avatars" />
+
+	<TextView
+		android:id="@+id/adapter_textView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_weight="1"
+		android:gravity="center"
+		android:text="@string/variety_name_init" />
+
+	<Button
+		android:id="@+id/adapter_button_remove"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:text="@string/remove"
+		android:visibility="gone"/>
+</LinearLayout>

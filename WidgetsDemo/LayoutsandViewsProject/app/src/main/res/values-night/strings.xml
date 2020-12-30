@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">Layouts and Views Project</string>
+	<string name="variety_name_init">Variety Name: </string>
+	<string name="remove">Remove</string>
+</resources>
