@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="wind">Wind</string>
+    <string name="pressure">Pressure</string>
+    <string name="humidity">Humidity</string>
+    <string name="something_went_wrong">Something went wrong</string>
+	<string name="address">Address</string>
+</resources>
