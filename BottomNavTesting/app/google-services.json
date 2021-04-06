@@ -1,0 +1,39 @@
+{
+	"project_info": {
+		"project_number": "184303490178",
+		"project_id": "cookie-clicker-chirag-baviskar",
+		"storage_bucket": "cookie-clicker-chirag-baviskar.appspot.com"
+	},
+	"client": [
+		{
+			"client_info": {
+				"mobilesdk_app_id": "1:184303490178:android:69dc424b1519c42906509b",
+				"android_client_info": {
+					"package_name": "com.example.bottomnavtesting"
+				}
+			},
+			"oauth_client": [
+				{
+					"client_id": "184303490178-fbs3n8n44vka0eqnbmoc39fimkcbig21.apps.googleusercontent.com",
+					"client_type": 3
+				}
+			],
+			"api_key": [
+				{
+					"current_key": "AIzaSyCKSqDMfE0njKaomq_Cu5XKGy4mqSON1RU"
+				}
+			],
+			"services": {
+				"appinvite_service": {
+					"other_platform_oauth_client": [
+						{
+							"client_id": "184303490178-fbs3n8n44vka0eqnbmoc39fimkcbig21.apps.googleusercontent.com",
+							"client_type": 3
+						}
+					]
+				}
+			}
+		}
+	],
+	"configuration_version": "1"
+}

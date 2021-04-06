@@ -21,18 +21,19 @@ import com.example.layoutsandviewsproject.Values.Companion.orientation
 import java.util.*
 import java.util.Objects.*
 
-open class MainActivity : AppCompatActivity(), DescriptionAccessor {
+class MainActivity : AppCompatActivity(), DescriptionAccessor {
 	private var mangoes = ArrayList<Mango>()
 	private lateinit var listAdapter: ListAdapter
 	private lateinit var booleans: BooleanArray
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
 		setContentView(activity_main)
-		mangoes.addAll(listOf(
+		mangoes.addAll(
+			listOf(
 				Mango(
-						honey,
-						"Honey",
-						"""
+					honey,
+					"Honey",
+					"""
 							- Aroma: Tropical fruit and peachy notes
 							- Texture: Smooth, firm flesh with no fibers
 							- Color: Vibrant yellow
@@ -43,9 +44,9 @@ open class MainActivity : AppCompatActivity(), DescriptionAccessor {
 							""".trimIndent()
 				),
 				Mango(
-						francis,
-						"Francis",
-						"""
+					francis,
+					"Francis",
+					"""
 							- Aroma: Peach and tropical fruit
 							- Texture: Soft, juicy flesh with fibers
 							- Color: Bright yellow skin with green overtones
@@ -56,9 +57,9 @@ open class MainActivity : AppCompatActivity(), DescriptionAccessor {
 							""".trimIndent()
 				),
 				Mango(
-						haden,
-						"Haden",
-						"""
+					haden,
+					"Haden",
+					"""
 							- Aroma: Tropical fruit with high peach notes
 							- Texture: Firm flesh due to fine fibers
 							- Color: Bright red with green and yellow overtones and small white dots
@@ -69,9 +70,9 @@ open class MainActivity : AppCompatActivity(), DescriptionAccessor {
 							""".trimIndent()
 				),
 				Mango(
-						keitt,
-						"Keitt",
-						"""
+					keitt,
+					"Keitt",
+					"""
 							- Aroma: High in citrus notes
 							- Texture: Firm, juicy flesh with limited fibers
 							- Color: Dark to medium green, sometimes with a pink blush over a small portion of the mango
@@ -82,9 +83,9 @@ open class MainActivity : AppCompatActivity(), DescriptionAccessor {
 							""".trimIndent()
 				),
 				Mango(
-						kent,
-						"Kent",
-						"""
+					kent,
+					"Kent",
+					"""
 							- Aroma: Peach and tropical fruit
 							- Texture: Juicy, tender flesh with limited fibers
 							- Color: Dark green and often has a dark red blush over a small portion of the mango
@@ -95,9 +96,9 @@ open class MainActivity : AppCompatActivity(), DescriptionAccessor {
 							""".trimIndent()
 				),
 				Mango(
-						tommy_atkins,
-						"Tommy Atkins",
-						"""
+					tommy_atkins,
+					"Tommy Atkins",
+					"""
 							- Aroma: Small hints of tropical fruit and citrus
 							- Texture: Firm flesh and high fibers throughout
 							- Color: A dark red blush often covers much of the fruit with green and orange-yellow accents
@@ -107,12 +108,11 @@ open class MainActivity : AppCompatActivity(), DescriptionAccessor {
 							- Peak Availability: March to July
 							""".trimIndent()
 				)
-		))
+			)
+		)
 		val orientation = this.resources.configuration.orientation
 		check(orientation == ORIENTATION_PORTRAIT || orientation == ORIENTATION_LANDSCAPE) { "Orientation unavailable or undefined" }
-		if (orientation == ORIENTATION_PORTRAIT) Values(1) else {
-			Values(2)
-		}
+		if (orientation == ORIENTATION_PORTRAIT) Values(1) else Values(2)
 
 		listAdapter = if (savedInstanceState == null) {
 			booleans = BooleanArray(mangoes.size)
@@ -124,10 +124,13 @@ open class MainActivity : AppCompatActivity(), DescriptionAccessor {
 			val descriptions = savedInstanceState.getStringArray("Descriptions")
 			booleans = savedInstanceState.getBooleanArray("View Click State")!!
 			val length = imageIDs!!.size
-			val mangoArrayList = (0 until length).map { Mango(imageIDs[it], names!![it], descriptions!![it]) }
+			val mangoArrayList =
+				(0 until length).map { Mango(imageIDs[it], names!![it], descriptions!![it]) }
 			ListAdapter(this, adapter_list, mangoArrayList, booleans)
 		}
-		((if (orientation == ORIENTATION_PORTRAIT) findViewById(layout_listView) else findViewById<View>(land_listView)) as ListView).adapter = listAdapter
+		((if (orientation == ORIENTATION_PORTRAIT) findViewById(layout_listView) else findViewById<View>(
+			land_listView
+		)) as ListView).adapter = listAdapter
 	}
 
 	public override fun onSaveInstanceState(outState: Bundle) {
@@ -161,14 +164,23 @@ open class MainActivity : AppCompatActivity(), DescriptionAccessor {
 
 class Mango(val imageID: Int, val name: String, val description: String)
 
-class ListAdapter(context: Context, private val resource: Int, private var objects: List<Mango>, private val booleanArray: BooleanArray) : ArrayAdapter<Mango?>(context, resource, objects) {
+class ListAdapter(
+	context: Context,
+	private val resource: Int,
+	private var objects: List<Mango>,
+	private val booleanArray: BooleanArray
+) : ArrayAdapter<Mango?>(context, resource, objects) {
 	interface DescriptionAccessor {
 		fun changeDescriptionText(x: String?)
 		fun setDescriptionVisibility(visibilityInt: Int)
 	}
 
 	override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-		val view = (requireNonNull(context).getSystemService(LAYOUT_INFLATER_SERVICE) as LayoutInflater).inflate(resource, null)
+		val view =
+			(requireNonNull(context).getSystemService(LAYOUT_INFLATER_SERVICE) as LayoutInflater).inflate(
+				resource,
+				null
+			)
 		val buttonRemove = view.findViewById<Button>(adapter_button_remove)
 		val textView = view.findViewById<TextView>(adapter_textView)
 		val imageView = view.findViewById<ImageView>(adapter_imageView)
@@ -176,7 +188,7 @@ class ListAdapter(context: Context, private val resource: Int, private var objec
 		imageView.contentDescription = objects[position].name
 		val s = textView.text.toString() + " " + objects[position].name
 		textView.text = s
-		val mainActivity = (context as MainActivity)
+		val mainActivity = context as MainActivity
 		if (booleanArray[position]) {
 			buttonRemove.visibility = VISIBLE
 			booleanArray[position] = true

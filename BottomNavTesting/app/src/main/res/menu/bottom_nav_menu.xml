@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/navigation_cookie"
+		android:icon="@drawable/cookie_icon"
+		android:title="@string/title_cookie" />
+	<item
+		android:id="@+id/navigation_buildings"
+		android:icon="@drawable/building"
+		android:title="@string/title_buildings" />
+</menu>

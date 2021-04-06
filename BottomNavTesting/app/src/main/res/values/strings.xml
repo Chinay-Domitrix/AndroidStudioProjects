@@ -1,0 +1,13 @@
+<resources>
+	<string name="app_name">Cookie Clicker - Bottom Nav Version</string>
+	<string name="title_cookie">Cookie</string>
+	<string name="title_buildings">Buildings</string>
+	<string name="cookie">Cookie</string>
+	<string name="buildings">Buildings</string>
+	<string name="perfectcookie">perfectCookie.png</string>
+	<string name="cookie_text">Cookies</string>
+	<string name="cps_text">CpS</string>
+	<string name="plus_one">+1</string>
+	<string name="zero">0</string>
+	<string name="building_icon">Building Icon</string>
+</resources>

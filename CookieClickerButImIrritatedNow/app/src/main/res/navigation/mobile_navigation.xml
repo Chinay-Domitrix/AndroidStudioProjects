@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/mobile_navigation"
+	app:startDestination="@+id/navigation_cookie">
+	<fragment
+		android:id="@+id/navigation_cookie"
+		android:name="com.example.cookieclickerbutimirritatednow.ui.cookie.CookieFragment"
+		android:label="@string/title_cookie"
+		tools:layout="@layout/fragment_cookie" />
+	<fragment
+		android:id="@+id/navigation_buildings"
+		android:name="com.example.cookieclickerbutimirritatednow.ui.buildings.BuildingFragment"
+		android:label="@string/title_buildings"
+		tools:layout="@layout/fragment_building" />
+</navigation>

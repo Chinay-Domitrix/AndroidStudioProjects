@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/cookie_layout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/bgblue"
+	tools:context=".ui.cookie.CookieFragment">
+
+	<LinearLayout
+		android:id="@+id/cookie_text_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginHorizontal="20dp"
+		android:layout_marginVertical="10dp"
+		android:background="@drawable/cookie_text_background"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:padding="20dp"
+		app:layout_constraintBottom_toTopOf="@+id/perfect_cookie"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="1"
+		app:layout_constraintVertical_chainStyle="packed">
+
+		<LinearLayout
+			android:id="@+id/cookies_layout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/cookie_quant"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="@string/zero"
+				android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+				android:textColor="#F2F2F2"
+				android:textSize="36sp"
+				android:typeface="normal" />
+
+			<TextView
+				android:id="@+id/cookie_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="5dp"
+				android:text="@string/cookie_text"
+				android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+				android:textColor="#F2F2F2"
+				android:textSize="36sp"
+				android:typeface="normal" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/cps_layout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/cps_quant"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/zero"
+				android:textColor="#F2F2F2"
+				android:textSize="18sp" />
+
+			<TextView
+				android:id="@+id/cps_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="5dp"
+				android:text="@string/cps_text"
+				android:textColor="#F2F2F2"
+				android:textSize="18sp" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<ImageView
+		android:id="@+id/perfect_cookie"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:adjustViewBounds="true"
+		android:background="#0fff"
+		android:clickable="true"
+		android:contentDescription="@string/perfect_cookie"
+		android:scaleType="fitCenter"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:srcCompat="@drawable/perfectcookie" />
+</androidx.constraintlayout.widget.ConstraintLayout>

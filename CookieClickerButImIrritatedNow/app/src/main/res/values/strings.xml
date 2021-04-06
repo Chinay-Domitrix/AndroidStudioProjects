@@ -1,0 +1,15 @@
+<resources>
+	<string name="app_name">Cookie Clicker - Bottom Nav Version</string>
+	<string name="title_cookie">Cookie</string>
+	<string name="title_buildings">Buildings</string>
+	<string name="cookie">Cookie</string>
+	<string name="buildings">Buildings</string>
+	<string name="perfect_cookie">perfectCookie.png</string>
+	<string name="cookie_text">Cookies</string>
+	<string name="cps_text">CpS</string>
+	<string name="plus_one">+1</string>
+	<string name="zero">0</string>
+	<string name="building_icon">Building Icon</string>
+	<string name="building_icon_path_data">m67.165,130.006l31.777,0l4.885,171.014l-40.938,0.001l4.276,-171.016l0,0.001zM37.216,307.168l315.327,0l0,22.004l18.893,0l-0.001,22.004l18.323,0l0,22.001l-389.758,-0.002l0,-21.999l18.323,0l0,-22.004l18.892,0l0,-22.004l0.001,0zM368.988,82.256l-174.112,-82.256l-174.115,82.256l0.001,13.448l348.226,0.001l0,-13.449l0.001,0zM54.328,101.857l281.105,0l0,21.999l-281.105,0l0,-21.999zM290.205,130.006l31.777,0l4.886,171.016l-40.937,-0.002l4.274,-171.014zM215.858,130.006l31.777,0.001l4.886,171.013l-40.939,0.001l4.276,-171.016l0,0.001zM141.511,130.006l31.776,-0.002l4.889,171.016l-40.94,0l4.276,-171.014z</string>
+	<string name="stats_building_icon">Stats Building Icon</string>
+</resources>

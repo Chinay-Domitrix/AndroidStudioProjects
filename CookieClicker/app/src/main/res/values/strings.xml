@@ -1,0 +1,8 @@
+<resources>
+	<string name="app_name">Cookie Clicker</string>
+	<string name="cookie">Cookie</string>
+	<string name="buildings">Buildings</string>
+	<string name="perfectcookie">perfectCookie.png</string>
+	<string name="default_start_cookies">0 Cookies</string>
+	<string name="cps">0 CpS</string>
+</resources>
